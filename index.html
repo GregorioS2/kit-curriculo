@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit Currículo Aprovado | 10 modelos que passam no filtro das vagas</title>
+<meta name="description" content="10 modelos de currículo prontos que passam no filtro da Gupy e de outros sistemas, 5 cartas de apresentação e um guia de entrevista. Acesso imediato por R$ 19,90.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kit Currículo Aprovado: seu currículo lido por quem contrata">
+<meta property="og:description" content="10 modelos prontos que passam no filtro das vagas, 5 cartas e guia de entrevista. R$ 19,90, acesso na hora.">
+<meta property="og:image" content="https://gregorios2.github.io/kit-curriculo/capa.jpg">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #000000;
+  --paper: #ffffff;
+  --mint: #00f0a0;
+  --mint-band: #ecffe0;
+  --soft: #f2f4f5;
+  --dark-step: #1a1a1a;
+
+  --font-display: "Titillium Web", "Arial Narrow", system-ui, sans-serif;
+  --font-text: "Inter", Helvetica, Arial, sans-serif;
+
+  --step-small: 0.875rem;
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.15rem + 0.45vw, 1.5rem);
+  --step-head: clamp(1.75rem, 1.2rem + 1.5vw, 2.25rem);
+  --step-display: clamp(3.25rem, 0.5rem + 8.3vw, 8rem);
+
+  --margin: clamp(1rem, 2.2vw, 2rem);
+  --gutter: clamp(1rem, 2vw, 2rem);
+  --pad: clamp(4.5rem, 9vw, 9rem);
+  --radius: 20px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-soft: cubic-bezier(0.33, 1, 0.68, 1);
+  --t-press: 140ms;
+  --t-hover: 180ms;
+  --t-reveal: 800ms;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-bottom: 96px; }
+:target { scroll-margin-top: 1rem; }
+a, button, summary, input { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.skip { position: absolute; left: var(--margin); top: -100px; z-index: 20; background: var(--mint); color: var(--ink); padding: .75rem 1rem; font-weight: 600; text-decoration: none; }
+.skip:focus { top: 1rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-text); font-size: var(--step-body); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p, figure, ul, ol { margin: 0; }
+ul[class], ol[class] { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
+button, input { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+.ch-light :focus-visible, .ch-mint :focus-visible { outline-color: var(--ink); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; hyphens: none; }
+p { text-wrap: pretty; }
+
+.wrap { padding-inline: var(--margin); }
+.grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+.display { font-size: var(--step-display); line-height: 0.92; letter-spacing: -0.035em; }
+.head { font-size: var(--step-head); line-height: 1.08; letter-spacing: -0.015em; }
+.lead { font-size: var(--step-lead); line-height: 1.4; }
+.small { font-size: var(--step-small); line-height: 1.45; }
+
+/* chapters */
+.ch { padding-block: var(--pad); position: relative; }
+.ch-white { background: var(--paper); color: var(--ink); }
+.ch-black { background: var(--ink); color: var(--paper); }
+.ch-mintband { background: var(--mint-band); color: var(--ink); }
+.ch-mint { background: var(--mint); color: var(--ink); }
+
+/* the one button */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5em; min-height: 56px; padding: 0 1.9rem; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 600; font-size: var(--step-body); text-decoration: none; white-space: nowrap; transition: transform var(--t-press) var(--ease-out), background-color var(--t-hover) ease, color var(--t-hover) ease; }
+.btn.on-dark { background: var(--mint); color: var(--ink); }
+.btn:active { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: scale(0.97); }
+}
+
+/* ---------- hero ---------- */
+.hero { padding-block: 0 clamp(3rem, 6vw, 5rem); }
+.band { position: relative; height: 52vh; min-height: 320px; display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: 1fr 1fr; grid-template-areas: "a a t b k1 k2" "k3 d t k4 e k5"; }
+.band > * { min-width: 0; min-height: 0; overflow: hidden; }
+.band img { width: 100%; height: 100%; object-fit: cover; object-position: left top; filter: grayscale(1) contrast(1.05); }
+.ba { grid-area: a; } .bb { grid-area: b; } .bd { grid-area: d; } .be { grid-area: e; }
+.bt { grid-area: t; background: var(--mint); }
+.k1 { grid-area: k1; background: var(--ink); }
+.k2 { grid-area: k2; background: var(--mint-band); }
+.k3 { grid-area: k3; background: var(--mint-band); }
+.k4 { grid-area: k4; background: var(--ink); }
+.k5 { grid-area: k5; background: var(--mint); }
+.top { position: absolute; inset: 0 0 auto 0; display: flex; align-items: stretch; z-index: 2; }
+.wordmark { display: flex; align-items: center; background: var(--ink); color: var(--paper); font-family: var(--font-display); font-weight: 700; font-size: var(--step-lead); line-height: 1; padding: 0 var(--margin); min-height: 64px; text-decoration: none; white-space: nowrap; }
+.tab { display: flex; align-items: center; gap: clamp(1rem, 2.4vw, 2.25rem); background: var(--mint); padding: 0 clamp(1rem, 2vw, 2rem); width: calc(42% - 0px); min-height: 64px; }
+.tab a { font-weight: 600; font-size: var(--step-body); text-decoration: none; text-underline-offset: .2em; }
+.tab a:hover { text-decoration: underline; }
+.top .buy { margin-left: auto; align-self: center; margin-right: var(--margin); min-height: 48px; padding: 0 1.4rem; }
+.hero-body { display: grid; grid-template-columns: 42% 1fr; column-gap: var(--gutter); padding-inline: var(--margin); padding-top: clamp(1.75rem, 4.5vh, 3rem); align-items: start; }
+.hero-side { padding-top: 0.6rem; }
+.hero-side { grid-column: 1; grid-row: 1; max-width: 30ch; }
+.hero-side p { font-size: var(--step-lead); line-height: 1.4; }
+.hero h1 { grid-column: 2; grid-row: 1; }
+.hero .cta { margin-top: 1.75rem; }
+.hero .cta-note { margin-top: .75rem; }
+.lines .line { display: block; overflow: hidden; padding-bottom: 0.1em; margin-bottom: -0.1em; }
+.lines [data-line] { display: block; }
+
+/* ---------- intro: the filter ---------- */
+.statement { font-size: var(--step-head); line-height: 1.22; font-weight: 600; letter-spacing: -0.01em; max-width: 46ch; }
+.facts { margin-top: clamp(3rem, 7vw, 6rem); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
+.facts li { font-size: var(--step-lead); line-height: 1.35; color: var(--mint); max-width: 22ch; }
+
+/* ---------- showcase: type your job ---------- */
+.ask { font-size: var(--step-head); line-height: 1.1; }
+.typer { position: relative; margin-top: .4rem; overflow-x: clip; }
+.typer input::placeholder { color: rgba(0,0,0,.35); }
+.typer input { width: 100%; border: 0; background: transparent; padding: 0; margin: 0; font-family: var(--font-display); font-weight: 700; font-size: var(--step-display); line-height: 1.05; letter-spacing: -0.035em; color: var(--ink); outline: none; caret-color: var(--ink); text-overflow: clip; }
+.typer input:focus-visible { outline: none; }
+.typer::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 4px; background: transparent; transition: background-color var(--t-hover) ease; }
+.typer:focus-within::after { background: var(--ink); }
+.caret { position: absolute; top: 12%; height: 76%; width: 0.08em; background: var(--ink); font-size: var(--step-display); pointer-events: none; animation: blink 1.05s steps(1) infinite; }
+.typer:focus-within .caret { display: none; }
+.mirror { position: absolute; left: 0; top: 0; visibility: hidden; white-space: pre; font-family: var(--font-display); font-weight: 700; font-size: var(--step-display); letter-spacing: -0.035em; }
+@keyframes blink { 50% { opacity: 0; } }
+.hint { margin-top: 1rem; max-width: 52ch; }
+.answer { margin-top: clamp(2.5rem, 5vw, 3.5rem); display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: var(--gutter); align-items: start; max-width: 820px; }
+.answer figure { background: var(--paper); }
+.answer img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: top; transition: opacity 220ms ease; }
+.answer.swap img { opacity: .35; }
+.answer h3 { font-size: var(--step-head); line-height: 1.08; }
+.answer .kw-label { margin-top: 1rem; font-weight: 600; }
+.answer ul { margin-top: .5rem; columns: 2; column-gap: var(--gutter); }
+.answer li { break-inside: avoid; padding: .2rem 0; }
+.answer .note { margin-top: 1rem; }
+.all { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.all p { font-weight: 600; }
+.chips { margin-top: .75rem; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips button { min-height: 44px; padding: 0 1rem; border-radius: var(--radius); background: var(--paper); font-size: var(--step-body); font-weight: 500; transition: transform var(--t-press) var(--ease-out), background-color var(--t-hover) ease, color var(--t-hover) ease; }
+.chips button:active { transform: scale(0.96); }
+.chips button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+@media (hover: hover) and (pointer: fine) { .chips button:hover { background: var(--mint); color: var(--ink); } .chips button[aria-pressed="true"]:hover { background: var(--ink); color: var(--paper); } }
+
+/* ---------- features: rows on an axis ---------- */
+.feat-head { min-height: 46svh; display: flex; align-items: center; padding-left: 35%; }
+.rows { margin-top: clamp(2rem, 4vw, 3rem); }
+.row { display: grid; grid-template-columns: 35% minmax(0, 1fr) auto; column-gap: var(--gutter); align-items: start; }
+.row + .row { margin-top: clamp(4.5rem, 8vw, 7.5rem); }
+.row .txt { grid-column: 2; max-width: 40ch; }
+.row h3 { font-size: var(--step-head); line-height: 1.08; }
+.row p { margin-top: .75rem; }
+.row figure { grid-column: 3; }
+.row img { width: var(--w); }
+.w-a { --w: 320px; } .w-b { --w: 240px; } .w-c { --w: 300px; } .w-d { --w: 260px; } .w-e { --w: 220px; }
+
+/* ---------- how it works: tiles that grow ---------- */
+.how { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 10px; row-gap: 1.25rem; align-items: end; }
+.how h2 { grid-column: 1 / 8; grid-row: 1; align-self: start; max-width: 14ch; }
+.stage { display: flex; flex-direction: column; }
+.stage .tile { display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: var(--radius); }
+.stage .tile img { mix-blend-mode: multiply; width: auto; max-height: 82%; max-width: 78%; transition: transform 500ms var(--ease-out); }
+.stage:hover .tile img { transform: scale(1.03); }
+.s1 { grid-column: 1 / 4; grid-row: 2; } .s1 .tile { height: 30vh; background: var(--soft); }
+.s2 { grid-column: 4 / 8; grid-row: 2; } .s2 .tile { height: 44vh; background: var(--mint-band); }
+.s3 { grid-column: 8 / 13; grid-row: 1 / 3; } .s3 .tile { height: 60vh; background: var(--mint); }
+.stage h3 { font-family: var(--font-text); font-weight: 600; font-size: var(--step-lead); margin-top: 1rem; letter-spacing: 0; }
+.stage p { margin-top: .35rem; max-width: 34ch; }
+
+/* ---------- pricing ---------- */
+.price-line { max-width: 12ch; }
+.price-tag { display: inline-block; background: var(--ink); color: var(--mint); padding: 0 0.15em; line-height: 1; }
+.offer { margin-top: 64px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); align-items: end; }
+.offer .inc { grid-column: 1 / 7; font-size: var(--step-lead); line-height: 1.4; }
+.offer .act { grid-column: 9 / 13; justify-self: end; text-align: right; }
+.offer .act .small { margin-top: .6rem; }
+.guarantee { margin-top: clamp(3rem, 6vw, 4.5rem); max-width: 52ch; font-weight: 500; }
+
+/* ---------- faq ---------- */
+.faq { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+.faq h2 { grid-column: 1 / 5; align-self: start; }
+.faq .list { grid-column: 5 / 13; display: flex; flex-direction: column; gap: 8px; }
+.faq details { background: var(--dark-step); border-radius: var(--radius); transition: background-color var(--t-hover) ease, color var(--t-hover) ease; }
+.faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 72px; padding: 1rem 24px; font-size: var(--step-lead); font-weight: 500; line-height: 1.3; }
+.faq summary::-webkit-details-marker { display: none; }
+.plus { position: relative; flex: 0 0 16px; height: 16px; }
+.plus::before, .plus::after { content: ""; position: absolute; left: 0; top: 6.5px; width: 16px; height: 3px; background: currentColor; transition: transform var(--t-hover) var(--ease-out); }
+.plus::after { transform: rotate(90deg); }
+.faq details[open] { background: var(--mint); color: var(--ink); }
+.faq details[open] .plus::after { transform: rotate(0deg); }
+.faq details p { padding: 0 24px 24px; max-width: 52ch; }
+@media (hover: hover) and (pointer: fine) { .faq details:not([open]):hover { background: #262626; } }
+
+/* ---------- footer ---------- */
+.end { padding-bottom: 0; overflow: hidden; }
+.invite { max-width: 18ch; }
+.end .btn { margin-top: 1.75rem; }
+.meta { margin-top: clamp(4rem, 9vw, 7rem); display: flex; justify-content: space-between; gap: 1rem; }
+.cropped { font-family: var(--font-display); font-weight: 700; font-size: 10.6vw; line-height: 0.8; letter-spacing: -0.045em; white-space: nowrap; margin-top: 1.5rem; margin-bottom: -0.18em; margin-left: -0.04em; }
+
+/* ---------- the bar that takes each chapter's ink ---------- */
+.bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; transform: translateY(0); transition: transform 360ms var(--ease-out), background-color 300ms ease, color 300ms ease; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 10px var(--margin) calc(10px + env(safe-area-inset-bottom)); background: var(--bar-bg, var(--ink)); color: var(--bar-fg, var(--paper)); }
+.bar.away { transform: translateY(110%); }
+.bar .btn { min-height: 52px; padding: 0 1.5rem; background: var(--bar-btn, var(--mint)); color: var(--bar-btn-ink, var(--ink)); transition: transform var(--t-press) var(--ease-out), background-color 300ms ease, color 300ms ease; }
+.bar strong { font-family: var(--font-display); font-size: var(--step-lead); }
+.bar-note { font-weight: 500; }
+.bar-price { display: none; }
+
+/* ---------- phone ---------- */
+@media (max-width: 760px) {
+  .band { height: 38svh; min-height: 260px; grid-template-columns: repeat(3, 1fr); grid-template-areas: "a k1 t" "k3 d t"; }
+  .bb, .be, .k2, .k4, .k5 { display: none; }
+  .tab { display: none; }
+  .wordmark { min-height: 52px; }
+  .top .buy { min-height: 44px; padding: 0 1.1rem; }
+  .hero-body { grid-template-columns: 1fr; padding-top: 1.75rem; }
+  .hero h1 { grid-column: 1; grid-row: 1; }
+  .hero-side { grid-column: 1; grid-row: 2; margin-top: 1.25rem; max-width: none; }
+  .hero-side p { font-size: var(--step-body); }
+  .hero .cta { width: 100%; }
+  .statement { font-size: 1.5rem; }
+  .facts { grid-template-columns: 1fr; gap: 1.25rem; }
+  .typer input, .caret, .mirror { font-size: 11vw; }
+  .answer { grid-template-columns: 1fr; }
+  .answer ul { columns: 1; }
+  .answer figure { max-width: 300px; }
+  .feat-head { min-height: 32svh; padding-left: 0; }
+  .row { grid-template-columns: 1fr; }
+  .row .txt, .row figure { grid-column: 1; }
+  .row figure { margin-top: 1.5rem; }
+  .row.r1 img { width: 100%; }
+  .row.r2 figure { justify-self: end; } .row.r2 img { width: 70vw; }
+  .row.r3 img { width: 55vw; }
+  .row.r4 figure { justify-self: end; } .row.r4 img { width: 70vw; }
+  .row.r5 img { width: 100%; }
+  .row + .row { margin-top: 64px; }
+  .how { grid-template-columns: 1fr; row-gap: 28px; }
+  .how h2 { grid-column: 1; grid-row: auto; }
+  .s1, .s2, .s3 { grid-column: 1; grid-row: auto; }
+  .stage .tile img { max-width: 64%; max-height: 88%; }
+  .s1 .tile { height: 46vw; } .s2 .tile { height: 62vw; } .s3 .tile { height: 86vw; }
+  .offer { grid-template-columns: 1fr; margin-top: 2rem; }
+  .offer .inc, .offer .act { grid-column: 1; }
+  .offer .act { justify-self: stretch; text-align: left; margin-top: 1.75rem; }
+  .offer .act .btn { width: 100%; }
+  .faq { grid-template-columns: 1fr; }
+  .faq h2, .faq .list { grid-column: 1; }
+  .faq h2 { position: static; margin-bottom: 1.5rem; }
+  .faq summary { min-height: 64px; padding: .9rem 20px; }
+  .faq details p { padding: 0 20px 20px; }
+  .end .btn { width: 100%; }
+  .meta { flex-direction: column; gap: .4rem; }
+  .bar-note { display: none; }
+  .bar-price { display: inline; }
+  .bar .btn { flex: 1; }
+}
+@media (min-width: 761px) { .ch.tall { min-height: 90svh; } }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .feat-head { padding-left: 0; min-height: 34svh; }
+  .row { grid-template-columns: minmax(0, 1fr) auto; }
+  .row .txt { grid-column: 1; }
+  .row figure { grid-column: 2; }
+  .w-a { --w: 260px; } .w-b { --w: 200px; } .w-c { --w: 240px; } .w-d { --w: 220px; } .w-e { --w: 190px; }
+}
+
+/* ---------- motion (content stays visible without script) ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .js .lines [data-line] { transform: translateY(105%); animation: line-up 900ms var(--ease-out) forwards; animation-delay: calc(var(--i, 0) * 110ms + 150ms); }
+  .js [data-rise] { opacity: 0; transform: translateY(18px); animation: rise var(--t-reveal) var(--ease-out) forwards; animation-delay: calc(var(--i, 0) * 90ms + 300ms); }
+  .js [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 700ms var(--ease-out), transform 900ms var(--ease-out); transition-delay: calc(var(--i, 0) * 75ms); }
+  .js [data-reveal].is-in { opacity: 1; transform: none; }
+  .band .drift img { animation: drift 22s var(--ease-in-out) 2 alternate; }
+  .band .drift:nth-of-type(2n) img { animation-duration: 27s; animation-delay: -6s; }
+}
+@keyframes line-up { to { transform: none; } }
+@keyframes rise { to { opacity: 1; transform: none; } }
+@keyframes drift { from { transform: scale(1.02) translate(0, 0); } to { transform: scale(1.1) translate(-2%, -3%); } }
+@media (prefers-reduced-motion: reduce) { .caret { animation: none; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#modelos">Pular para os modelos</a>
+
+<main>
+<section class="hero ch-white" id="topo" data-bar="light">
+  <div class="band">
+    <nav class="top" aria-label="Principal">
+      <a class="wordmark" href="#topo" translate="no">Currículo Aprovado</a>
+      <div class="tab">
+        <a href="#modelos">Modelos</a>
+        <a href="#kit">O que vem</a>
+        <a href="#preco">Preço</a>
+      </div>
+      <a class="btn buy" href="https://pay.kiwify.com.br/uU4ZUy7">Comprar</a>
+    </nav>
+    <div class="ba drift"><img fetchpriority="high" src="img/mosaico-a.jpg" width="760" height="355" alt="Trecho do modelo de currículo para estágio em tecnologia"></div>
+    <div class="bt"></div>
+    <div class="bb drift"><img src="img/mosaico-b.jpg" width="760" height="483" alt="Trecho do modelo de currículo para Jovem Aprendiz"></div>
+    <div class="k1"></div><div class="k2"></div><div class="k3"></div>
+    <div class="bd drift"><img src="img/mosaico-c.jpg" width="760" height="498" alt="Trecho do modelo de currículo para operador de caixa"></div>
+    <div class="k4"></div>
+    <div class="be drift"><img src="img/mosaico-d.jpg" width="760" height="483" alt="Trecho do modelo de currículo para recepcionista"></div>
+    <div class="k5"></div>
+  </div>
+  <div class="hero-body">
+    <h1 class="display lines">
+      <span class="line"><span data-line style="--i:0">Kit Currículo</span></span>
+      <span class="line"><span data-line style="--i:1">Aprovado</span></span>
+    </h1>
+    <div class="hero-side">
+      <p data-rise style="--i:0">10 modelos de currículo prontos que passam no filtro automático das vagas, como a Gupy, com cartas e guia de entrevista.</p>
+      <a class="btn cta" data-rise style="--i:1" href="https://pay.kiwify.com.br/uU4ZUy7">Quero meu kit por R$&nbsp;19,90</a>
+      <p class="small cta-note" data-rise style="--i:2">Pix ou cartão · acesso na hora no seu e-mail · garantia de 7 dias</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch ch-black" id="filtro" data-bar="dark" aria-labelledby="filtro-t">
+  <div class="wrap">
+    <h2 class="sr-only" id="filtro-t">Por que seu currículo some</h2>
+    <p class="statement" data-reveal>Antes de uma pessoa ler seu currículo, um filtro automático lê. Se ele não entende, você some sem resposta.</p>
+    <ul class="facts">
+      <li data-reveal style="--i:1">Colunas, tabelas e caixas de texto embaralham a leitura.</li>
+      <li data-reveal style="--i:2">Ícones, fotos e gráficos de habilidade não são lidos.</li>
+      <li data-reveal style="--i:3">Sem as palavras da vaga, você vai para o fim da fila.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="ch ch-mintband tall" id="modelos" data-bar="light">
+  <div class="wrap">
+    <h2 class="ask" data-reveal><label for="vaga">Qual vaga você procura?</label></h2>
+    <div class="typer" data-ui>
+      <input id="vaga" name="vaga" type="text" value="Jovem Aprendiz" placeholder="Ex.: operador de caixa…" autocomplete="off" autocapitalize="sentences" spellcheck="false" enterkeyhint="search" aria-describedby="vaga-dica" aria-controls="resposta">
+      <span class="caret" aria-hidden="true"></span>
+      <span class="mirror" aria-hidden="true"></span>
+    </div>
+    <p class="hint" id="vaga-dica" data-reveal style="--i:1">Digite a vaga e veja o modelo do kit feito para ela, com as palavras-chave que o filtro procura.</p>
+
+    <div class="answer" id="resposta" aria-live="polite" data-ui>
+      <figure><img id="r-img" src="img/modelo-aprendiz.jpg" width="600" height="600" alt="Modelo de currículo Jovem Aprendiz"></figure>
+      <div>
+        <h3 id="r-nome">Jovem Aprendiz</h3>
+        <p class="kw-label">Palavras-chave que já vêm no modelo:</p>
+        <ul id="r-chaves">
+          <li>Informática básica</li><li>Atendimento</li><li>Organização</li><li>Responsabilidade</li><li>Trabalho em equipe</li><li>Disponibilidade de horário</li>
+        </ul>
+        <p class="note small" id="r-nota">Arquivo Word, já preenchido com um exemplo. Você troca pelos seus dados no celular.</p>
+      </div>
+    </div>
+
+    <div class="all">
+      <p>Os 10 modelos do kit:</p>
+      <div class="chips" id="chips">
+        <button type="button" data-id="primeiro">Primeiro emprego</button>
+        <button type="button" data-id="aprendiz" aria-pressed="true">Jovem Aprendiz</button>
+        <button type="button" data-id="adm">Estágio em Administração</button>
+        <button type="button" data-id="ti">Estágio em TI</button>
+        <button type="button" data-id="vendas">Vendas e Atendimento</button>
+        <button type="button" data-id="auxadm">Auxiliar Administrativo</button>
+        <button type="button" data-id="recepcao">Recepcionista</button>
+        <button type="button" data-id="caixa">Operador(a) de Caixa</button>
+        <button type="button" data-id="logistica">Logística e Estoque</button>
+        <button type="button" data-id="recoloca">Recolocação e transição</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ch ch-black" id="kit" data-bar="dark">
+  <div class="wrap">
+    <div class="feat-head"><h2 class="display" data-reveal>Além do currículo</h2></div>
+    <div class="rows">
+      <div class="row r1">
+        <div class="txt" data-reveal><h3>5 cartas de apresentação</h3><p>Geral por e-mail, primeiro emprego, estágio, candidatura espontânea e transição de carreira. É só preencher o que está entre colchetes.</p></div>
+        <figure data-reveal style="--i:1"><img class="w-a" src="img/carta.jpg" width="640" height="513" loading="lazy" alt="Página da carta de apresentação para primeiro emprego"></figure>
+      </div>
+      <div class="row r2">
+        <div class="txt" data-reveal><h3>Guia Chamado para Entrevista</h3><p>Como colocar as palavras-chave da vaga, frases prontas de resumo, o que tirar do currículo, checklist antes de enviar e onde se candidatar.</p></div>
+        <figure data-reveal style="--i:1"><img class="w-b" src="img/guia-capa.jpg" width="640" height="743" loading="lazy" alt="Capa do Guia Chamado para Entrevista"></figure>
+      </div>
+      <div class="row r3">
+        <div class="txt" data-reveal><h3>As 8 perguntas que mais caem</h3><p>Como responder cada uma, de “fale sobre você” a “qual seu ponto fraco” e pretensão salarial.</p></div>
+        <figure data-reveal style="--i:1"><img class="w-c" src="img/perguntas.jpg" width="640" height="481" loading="lazy" alt="Página do roteiro com as 8 perguntas de entrevista"></figure>
+      </div>
+      <div class="row r4">
+        <div class="txt" data-reveal><h3>Mensagens prontas para recrutador</h3><p>Textos para LinkedIn, WhatsApp e e-mail de retorno, para você ser lembrado(a) depois de se candidatar.</p></div>
+        <figure data-reveal style="--i:1"><img class="w-d" src="img/mensagens.jpg" width="640" height="395" loading="lazy" alt="Página com mensagens prontas para recrutador"></figure>
+      </div>
+      <div class="row r5">
+        <div class="txt" data-reveal><h3>Plano de 7 dias</h3><p>O que fazer em cada dia da semana para sair do currículo parado e chegar às entrevistas.</p></div>
+        <figure data-reveal style="--i:1"><img class="w-e" src="img/plano.jpg" width="640" height="472" loading="lazy" alt="Tabela do plano de 7 dias"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ch ch-white" id="como" data-bar="light">
+  <div class="wrap how">
+    <h2 class="head" data-reveal>Pronto para enviar hoje</h2>
+    <div class="stage s1" data-reveal style="--i:1">
+      <div class="tile"><img src="img/modelo-primeiro.jpg" width="600" height="600" loading="lazy" alt="Modelo de currículo aberto depois do download"></div>
+      <h3>Baixe</h3>
+      <p>O acesso chega no seu e-mail logo depois do pagamento, inclusive no Pix.</p>
+    </div>
+    <div class="stage s2" data-reveal style="--i:2">
+      <div class="tile"><img src="img/modelo-caixa.jpg" width="600" height="600" loading="lazy" alt="Modelo de currículo sendo preenchido"></div>
+      <h3>Preencha</h3>
+      <p>Abra no Google Docs, Word ou WPS, no celular ou no computador, e troque os exemplos pelos seus dados.</p>
+    </div>
+    <div class="stage s3" data-reveal style="--i:3">
+      <div class="tile"><img src="img/carta.jpg" width="640" height="513" loading="lazy" alt="Carta de apresentação pronta para enviar"></div>
+      <h3>Envie</h3>
+      <p>Coloque as palavras da vaga seguindo o guia, salve em PDF e mande com a carta pronta.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch ch-mint tall" id="preco" data-bar="mint">
+  <div class="wrap">
+    <h2 class="display price-line" data-reveal>Tudo por <span class="price-tag">R$&nbsp;19,90</span></h2>
+    <div class="offer">
+      <p class="inc" data-reveal style="--i:1">Pagamento único. Você recebe os 10 modelos, as 5 cartas, o guia, o roteiro de entrevista, as mensagens prontas e o plano de 7 dias, e usa em quantas vagas quiser.</p>
+      <div class="act" data-reveal style="--i:2">
+        <a class="btn" href="https://pay.kiwify.com.br/uU4ZUy7">Quero meu kit agora</a>
+        <p class="small">Pix ou cartão · pagamento seguro pela Kiwify</p>
+      </div>
+    </div>
+    <p class="guarantee" data-reveal style="--i:3">Garantia de 7 dias: se achar que o kit não é para você, peça o reembolso pela própria Kiwify e receba 100% do valor de volta, sem perguntas.</p>
+  </div>
+</section>
+
+<section class="ch ch-black" id="duvidas" data-bar="dark">
+  <div class="wrap faq">
+    <h2 class="head">Dúvidas</h2>
+    <div class="list">
+      <details name="faq" data-reveal><summary>Como recebo o kit?<span class="plus" aria-hidden="true"></span></summary><p>Logo depois da confirmação do pagamento, você recebe no e-mail o acesso à área de membros da Kiwify, onde baixa todos os arquivos. No Pix, a confirmação costuma ser imediata.</p></details>
+      <details name="faq" data-reveal style="--i:1"><summary>Consigo editar pelo celular?<span class="plus" aria-hidden="true"></span></summary><p>Sim. Os arquivos estão em Word (.docx) e abrem no Google Docs, no app do Word ou no WPS Office, todos gratuitos no celular.</p></details>
+      <details name="faq" data-reveal style="--i:2"><summary>Não tenho experiência nenhuma. Serve para mim?<span class="plus" aria-hidden="true"></span></summary><p>Serve, e foi pensado para isso. Há modelos para primeiro emprego e Jovem Aprendiz, e o guia mostra o que colocar no lugar da experiência: cursos, voluntariado e projetos.</p></details>
+      <details name="faq" data-reveal style="--i:3"><summary>O que é esse filtro ou ATS?<span class="plus" aria-hidden="true"></span></summary><p>É o sistema que empresas usam para ler e classificar currículos automaticamente, como a Gupy. Ele tem dificuldade com colunas, tabelas e imagens e procura as palavras da vaga. Os modelos usam um formato que esses sistemas leem bem.</p></details>
+      <details name="faq" data-reveal style="--i:4"><summary>Minha vaga não está na lista. E agora?<span class="plus" aria-hidden="true"></span></summary><p>Use o modelo mais parecido. O guia mostra como trocar as palavras-chave para qualquer vaga em poucos minutos.</p></details>
+      <details name="faq" data-reveal style="--i:5"><summary>Vocês garantem que vou conseguir emprego?<span class="plus" aria-hidden="true"></span></summary><p>Ninguém pode garantir isso com honestidade. O kit melhora suas chances de passar na triagem e de ir bem na entrevista. Se não gostar, você tem 7 dias de garantia.</p></details>
+      <details name="faq" data-reveal style="--i:6"><summary>É assinatura? Vou pagar todo mês?<span class="plus" aria-hidden="true"></span></summary><p>Não. É um pagamento único de R$&nbsp;19,90 e os arquivos são seus.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ch ch-white end" data-bar="light">
+  <div class="wrap">
+    <h2 class="head invite" data-reveal>Mande o próximo currículo do jeito certo.</h2>
+    <a class="btn" data-reveal style="--i:1" href="https://pay.kiwify.com.br/uU4ZUy7">Quero meu kit por R$&nbsp;19,90</a>
+    <div class="meta small">
+      <span>Pagamento processado pela Kiwify</span>
+      <span>Os nomes e dados dos modelos são fictícios, usados apenas como exemplo.</span>
+      <span>2026</span>
+    </div>
+  </div>
+  <p class="cropped" aria-hidden="true">Currículo Aprovado</p>
+</footer>
+
+<div class="bar" id="bar">
+  <p class="bar-note"><strong>R$&nbsp;19,90</strong> · kit completo, acesso na hora</p>
+  <a class="btn" href="https://pay.kiwify.com.br/uU4ZUy7">Quero meu kit<span class="bar-price"> por R$&nbsp;19,90</span></a>
+</div>
+
+<script>
+// Reveal once when an element enters the viewport; never leaves content hidden.
+(() => {
+  const targets = document.querySelectorAll('[data-reveal]');
+  if (!('IntersectionObserver' in window)) { targets.forEach((el) => el.classList.add('is-in')); return; }
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+  targets.forEach((el) => io.observe(el));
+  addEventListener('load', () => setTimeout(() => targets.forEach((el) => {
+    const r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) el.classList.add('is-in');
+  }), 2500));
+})();
+
+// The buy bar takes the ink of the chapter under it.
+(() => {
+  const bar = document.getElementById('bar');
+  const themes = {
+    light: ['#000000', '#ffffff', '#00f0a0', '#000000'],
+    dark:  ['#ffffff', '#000000', '#000000', '#ffffff'],
+    mint:  ['#000000', '#ffffff', '#00f0a0', '#000000']
+  };
+  const set = (t) => { const v = themes[t] || themes.light; ['--bar-bg', '--bar-fg', '--bar-btn', '--bar-btn-ink'].forEach((k, i) => bar.style.setProperty(k, v[i])); };
+  const chapters = document.querySelectorAll('[data-bar]');
+  if (!('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) set(e.target.dataset.bar);
+  }, { rootMargin: '-92% 0px 0px 0px', threshold: 0 });
+  chapters.forEach((el) => io.observe(el));
+  // step aside while the hero or closing button is on screen, so it never doubles them
+  const seen = new Set();
+  const own = new IntersectionObserver((entries) => {
+    for (const e of entries) e.isIntersecting ? seen.add(e.target) : seen.delete(e.target);
+    bar.classList.toggle('away', seen.size > 0);
+  }, { threshold: 0 });
+  document.querySelectorAll('.hero .cta, .end .btn').forEach((el) => own.observe(el));
+})();
+
+// The live thing: type a job, see the model made for it.
+(() => {
+  const M = {
+    'primeiro': { nome: 'Primeiro emprego', chaves: ['Atendimento ao público', 'Comunicação', 'Pacote Office (Word, Excel)', 'Organização', 'Trabalho em equipe', 'Pontualidade'],
+            termos: ['primeiro emprego', 'primeiro', 'sem experiencia', 'atendente', 'atendimento', 'balconista', 'garcom', 'garconete', 'auxiliar geral', 'servicos gerais', 'limpeza', 'cozinha', 'lanchonete', 'fast food'] },
+    'adm': { nome: 'Estágio em Administração', chaves: ['Excel intermediário', 'Rotinas administrativas', 'Fluxo de caixa', 'Power BI básico', 'Inglês intermediário', 'Comunicação'],
+            termos: ['estagio', 'estagiario', 'estagiaria', 'administracao', 'adm', 'financeiro', 'financas', 'rh', 'recursos humanos', 'contabil', 'contabilidade', 'economia', 'marketing'] },
+    'ti': { nome: 'Estágio em Tecnologia e TI', chaves: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'SQL', 'Git/GitHub', 'APIs REST', 'Inglês técnico'],
+            termos: ['ti', 'estagio', 'estagiario', 'estagiaria', 'tecnologia', 'suporte', 'programador', 'programacao', 'desenvolvedor', 'dev', 'front', 'back', 'suporte tecnico', 'helpdesk', 'help desk', 'computacao', 'sistemas', 'dados', 'software', 'informatica'] },
+    'aprendiz': { nome: 'Jovem Aprendiz', chaves: ['Informática básica', 'Atendimento', 'Organização', 'Responsabilidade', 'Trabalho em equipe', 'Disponibilidade de horário'],
+            termos: ['jovem aprendiz', 'aprendiz', 'menor aprendiz', 'jovem'] },
+    'vendas': { nome: 'Vendas e Atendimento', chaves: ['Vendas consultivas', 'Metas', 'Negociação', 'Pós-venda pelo WhatsApp', 'Operação de caixa', 'Atendimento'],
+            termos: ['vendas', 'vendedor', 'vendedora', 'venda', 'comercial', 'loja', 'consultor', 'consultora', 'telemarketing', 'sac', 'call center', 'televendas', 'promotor', 'promotora'] },
+    'auxadm': { nome: 'Auxiliar Administrativo', chaves: ['Excel avançado', 'Emissão de NF', 'Contas a pagar e receber', 'ERP (Bling, Omie)', 'Arquivo', 'Atendimento telefônico'],
+            termos: ['auxiliar administrativo', 'assistente administrativo', 'administrativo', 'escritorio', 'assistente', 'secretaria', 'secretario', 'faturamento', 'auxiliar de escritorio', 'departamento pessoal'] },
+    'recepcao': { nome: 'Recepcionista', chaves: ['Atendimento presencial e telefônico', 'Agendamento', 'Sistemas de clínica', 'Fechamento de caixa', 'Organização', 'Cordialidade'],
+            termos: ['recepcionista', 'recepcao', 'clinica', 'consultorio', 'hotel', 'portaria', 'porteiro', 'hospital', 'atendente de clinica'] },
+    'caixa': { nome: 'Operador(a) de Caixa e Varejo', chaves: ['Operação de caixa', 'Pix e cartões', 'Reposição', 'Precificação', 'Atendimento', 'Disponibilidade de horário'],
+            termos: ['operador de caixa', 'operadora de caixa', 'caixa', 'operador', 'operadora', 'repositor', 'repositora', 'mercado', 'supermercado', 'varejo', 'atacado', 'atacadista', 'padaria', 'farmacia', 'balconista de farmacia'] },
+    'logistica': { nome: 'Logística e Estoque', chaves: ['Recebimento e expedição', 'Separação e conferência', 'Inventário', 'WMS', 'Empilhadeira (NR-11)', 'Organização'],
+            termos: ['logistica', 'estoque', 'estoquista', 'almoxarife', 'almoxarifado', 'expedicao', 'armazem', 'conferente', 'separador', 'empilhadeira', 'producao', 'auxiliar de producao', 'operador de producao', 'motorista', 'entregador', 'ajudante'] },
+    'recoloca': { nome: 'Recolocação e transição de carreira', chaves: ['Relacionamento com cliente', 'Retenção', 'NPS', 'CRM (HubSpot)', 'Liderança', 'Excel', 'Comunicação'],
+            termos: ['recolocacao', 'transicao', 'mudar de area', 'mudanca de carreira', 'customer success', 'cs', 'analista', 'supervisor', 'coordenador', 'gerente', 'lider', 'experiente'] }
+  };
+  const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  const match = (q) => {
+    q = norm(q); if (!q) return null;
+    const words = q.split(' ');
+    // words that show up in many jobs count little, so 'estagio ti' lands on TI, not on the first estagio
+    const GENERIC = ['estagio', 'estagiario', 'estagiaria', 'analista', 'auxiliar', 'assistente', 'operador', 'operadora', 'jovem'];
+    let best = null, score = 0;
+    for (const [id, m] of Object.entries(M)) {
+      let total = 0;
+      for (const t of m.termos) {
+        let s = 0;
+        if (t.length <= 3) { if (words.includes(t)) s = t.length + 1; }
+        else if (q.includes(t)) s = t.length + 2;
+        else if (q.length >= 3 && t.startsWith(q)) s = q.length;
+        else if (q.length >= 4 && words.some((w) => w.length >= 4 && t.split(' ').some((tw) => tw.startsWith(w)))) s = 2;
+        if (s && GENERIC.includes(t)) s = 1;
+        total += s;
+      }
+      if (total > score) { score = total; best = id; }
+    }
+    return best;
+  };
+  const input = document.getElementById('vaga');
+  const mirror = document.querySelector('.mirror');
+  const caret = document.querySelector('.caret');
+  const ans = document.getElementById('resposta');
+  const img = document.getElementById('r-img'), nome = document.getElementById('r-nome'), chaves = document.getElementById('r-chaves'), nota = document.getElementById('r-nota');
+  const chips = document.querySelectorAll('#chips button');
+  const NOTA = 'Arquivo Word, já preenchido com um exemplo. Você troca pelos seus dados no celular.';
+  let current = 'aprendiz';
+  const placeCaret = () => { mirror.textContent = input.value || ' '; caret.style.left = Math.min(mirror.offsetWidth + 4, input.offsetWidth - 6) + 'px'; };
+  const show = (id, exact) => {
+    const m = M[id];
+    nota.textContent = exact ? NOTA : 'Não achamos essa vaga exata. Comece pelo modelo mais parecido: o guia mostra como trocar as palavras para a sua vaga.';
+    chips.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.id === id)));
+    if (id === current) return;
+    current = id;
+    ans.classList.add('swap');
+    const next = new Image();
+    next.onload = next.onerror = () => {
+      img.src = next.src; img.alt = 'Modelo de currículo ' + m.nome;
+      nome.textContent = m.nome;
+      chaves.innerHTML = '';
+      m.chaves.forEach((c) => { const li = document.createElement('li'); li.textContent = c; chaves.appendChild(li); });
+      ans.classList.remove('swap');
+    };
+    next.src = 'img/modelo-' + id + '.jpg';
+  };
+  let t;
+  input.addEventListener('input', () => {
+    placeCaret(); clearTimeout(t);
+    t = setTimeout(() => { const id = match(input.value); if (id) show(id, true); else if (norm(input.value).length >= 3) show('primeiro', false); }, 180);
+  });
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') input.blur(); });
+  chips.forEach((b) => b.addEventListener('click', () => { input.value = b.textContent; placeCaret(); show(b.dataset.id, true); }));
+  const ready = () => placeCaret();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(ready); else ready();
+  addEventListener('resize', ready);
+})();
+</script>
+</body>
+</html>
